@@ -1,0 +1,780 @@
+{% extends "student.html" %}
+{% block title %}Course Details{% endblock title %}
+{% block body %}
+<div class="container py-4">
+    <img src="/static/img/dlogo.png" class="rounded float-right py-2" height="auto;" width="210;" alt="...">
+    <p class="display-4 text-center py-4">Course Details</p>
+</div>
+
+
+<div class="container py-4">
+
+ <!-- Three columns of text below the carousel -->
+ <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col">
+    <div class="card shadow">
+      
+      <img src="/static/img/999.png" class="rounded mx-auto " height="auto;" width="200;" alt="...">
+     
+      <div class="card-body">
+        <h4 class="card-text"><b>Module-1:</b> AWS Cloud Feature and Services</h4>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#awsmodal">
+                  View details &raquo;
+                </button>
+          
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow">
+      <img src="/static/img/555.png" class="rounded mx-auto" height="auto;" width="200;" alt="...">
+      <div class="card-body">
+        <h4 class="card-text"><b>Module-2:</b> Amazon Linux Centos</h4>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#amazonmodal">
+                  View details &raquo;
+                </button>
+         
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card shadow-sm">
+      <img src="/static/img/1111.png"  class="rounded mx-auto" height="auto;" width="200;"alt="...">
+      <div class="card-body">
+        <h4 class="card-text"><b>Module-3:</b> DevOps methodology</h4>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#devopmodal">
+                  View details &raquo;
+                </button>
+            
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col py-4">
+    <div class="card shadow-sm">
+      <img src="/static/img/777.png" class="rounded mx-auto" height="auto;" width="200;" alt="...">
+      <div class="card-body">
+        <h4 class="card-text"><b>Module-4:</b> Git and GitHub Version Control System</h4>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#gitmodal">
+                  View details &raquo;
+                </button>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col py-4">
+    <div class="card shadow-sm">
+      <img src="/static/img/333.png" class="rounded mx-auto " height="auto;" width="200;" alt="...">
+      <div class="card-body">
+        <h4 class="card-text"><b>Module-5:</b> Jenkins CI/CD Pipeline</h4>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#jkmodal">
+                  View details &raquo;
+                </button>
+           
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col py-4">
+    <div class="card shadow-sm">
+      <img src="/static/img/666.png" class="rounded mx-auto " height="auto;" width="200;" alt="...">
+      <div class="card-body">
+        <h4 class="card-text"><b>Module-6:</b> Docker containerization</h4>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#dockermodal">
+                  View details &raquo;
+                </button>
+           
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    
+  </div> 
+  
+  <div class="col">
+      <div class="card shadow">
+        <img src="/static/img/444.png" class="rounded mx-auto" height="auto;" width="200;" alt="...">
+
+        <div class="card-body">
+          <h4 class="card-text"><b>Module-7:</b> Orchestration (Kubernetes)</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#okmodal">
+                  View details &raquo;
+                </button>
+            
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/img/222.png" class="rounded mx-auto " height="auto;" width="200;" alt="...">
+        <div class="card-body">
+          <h4 class="card-text"><b>Module-8:</b> Ansible Automation Configuration Tool</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#ansiblemodal">
+                  View details &raquo;
+                </button>
+           
+            </div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col ">
+      <div class="card shadow-sm">
+        <img src="/static/img/111.png" class="rounded mx-auto" height="auto;" width="200;" alt="...">
+        <div class="card-body">
+          <h4 class="card-text"><b>Module-9:</b> Terraform IAC Tool</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group py-3">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#terramodal">
+                  View details &raquo;
+                </button>
+              
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col py-4">
+      <div class="card shadow-sm">
+        <img src="/static/img/888.png" class="rounded mx-auto " height="auto;" width="200;" alt="...">
+        <div class="card-body">
+          <h4 class="card-text"><b>Module-10:</b> Grafana Observability and Monitoring</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group py-3 ">
+              <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#gmodal">
+                  View details &raquo;
+                </button>
+              
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+   
+</div>
+    
+
+
+<!-- /.Modal AWS -->
+<div class="container">
+    <div class="modal fade" id="awsmodal" tabindex="-1" role="dialog" aria-labelledby="awsmodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <img src="/static/img/aws.png" class="rounded py-2" height="50;" width="50;" alt="...">
+             <div class="container">
+             
+              <h5 class="modal-title text-center"  id="awsmodaltitle">   Module-1: AWS Cloud Feature and Services </h5>
+             </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              
+            </div>
+            <div class="modal-body list-group">
+             
+                <div class="mb-3 ">
+                  
+               
+                      <p  class=" border-bottom">✓ AWS Free Tier Account Activation and Enabling AWS Services and Features.</p>
+                      <p  class=" border-bottom">✓ Creating a Windows Server 2022 EC2 Instance and Establishing Connectivity Using RDP.
+                      </p>
+                      <p class=" border-bottom">✓ Understanding Storage Types and Creating an S3 Bucket with Enabled Features.</p>
+                      <p  class=" border-bottom" >✓ Creating a Security Group, Adding TCP Rules, and Installing/Publishing an IIS Web Server.</p>
+                      <p  class=" border-bottom" >✓ Creating a Default VPC, Customizing VPC Settings, and Establishing Peering Between Local and
+                          Global VPCs.
+                      </p>
+                      <p  class=" border-bottom" >✓ AWS Identity and Access Management (IAM), User and Group Role-Based Permissions, and
+                          Policies.
+                      </a>
+                      <p  class=" border-bottom" >✓ AWS Auto-Scaling and Load Balancing, Application and Network Load Balancing.
+                      </p>
+                      <p  class=" border-bottom" >✓ AWS Virtual Private Network (VPN) for Secure Communication Over the Internet.
+                      </p>
+                      <p  class=" border-bottom" > ✓ Configuring and Hosting a Static Website on AWS Cloud with Route 53.
+                      </p>
+                      <p  class="border-bottom" >✓ Understanding Databases and Establishing Connectivity Between Cloud and On-Premises
+                        Environments.</p>
+                     
+                   
+            </div>
+           <div> 
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        
+           </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      
+<!-- /.Modal Amazaon -->
+<div class="container">
+<div class="modal fade" id="amazonmodal" tabindex="-1" role="dialog" aria-labelledby="amazonmodal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <img src="/static/img/linux.png" class="rounded py-2" height="50;" width="50;" alt="...">
+         <div class="container">
+         
+          <h5 class="modal-title text-center"  id="amazonmodaltitle">   Module-2: Amazon Linux | Centos
+          </h5>
+         </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          
+        </div>
+        <div class="modal-body">
+         
+            <div class="mb-3">
+           
+                  <p class="border-bottom">✓ Amazon Linux EC2 Instance and Establishing Connectivity Using PuttyGen and Putty
+                      .</p>
+                  <p class="border-bottom" >✓ Learning and Using Linux File and Directory Operation Commands
+                      .
+                  </p>
+                  <p class="border-bottom">✓ Learning and Using Linux User and Group Management and System Control Commands.</p>
+                  <p class="border-bottom">✓ Learning and Using Linux Networking and System Information Commands.</p>
+                  <p class="border-bottom">✓ Learning and Using Linux Archiving, Compression, Permissions, and Security Commands.
+                  </p>
+                  <p class="border-bottom">✓ Amazon Linux EC2 Instance Installation of Web Server (httpd) and Publishing a Webpage
+                      .
+                  </p>
+                  <p class="border-bottom">✓ Amazon Linux EC2 Instance Installation of Web Server (Nginx) and Publishing a Webpage
+                      .
+                  </p>
+                  <p class="border-bottom">✓ Linux Security with Ssh-Keygen and IP Tables Commands.
+                  </p>
+                  <p class="border-bottom">✓ Basic Bash Scripting.
+                  </p>
+                  <p class="border-bottom">✓ Bash Scripting with Examples.
+                  </p>
+                
+     
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /.Modal Devop -->
+
+<div class="container">
+  <div class="modal fade" id="devopmodal" tabindex="-1" role="dialog" aria-labelledby="devopmodal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <img src="/static/img/logo.png" class="rounded py-2" height="50;" width="50;" alt="...">
+         <div class="container">
+         
+          <h5 class="modal-title text-center py-2"  id="devopmodaltitle">   Module-3: DevOps methodology
+          </h5>
+         </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          
+        </div>
+        <div class="modal-body">
+         
+            <div class="mb-3">
+           
+                  <p class="border-bottom" >✓ Evolution of DevOps from Agile
+                      .</p>
+                  <p class="border-bottom" >✓ DevOps Engineer Skills in the Market
+  
+                      .
+                  </p>
+                  <p class="border-bottom">✓ Understanding the DevOps Delivery Pipeline
+                      .</p>
+                  <p class="border-bottom">✓ Market Trends in DevOps
+                      .</p>
+                  <p class="border-bottom">✓ DevOps Technical Challenges and Tools.
+                  </p>
+                  <p class="border-bottom">✓ DevOps Tools and Platforms
+  
+                      .
+                  </p>
+                 
+        </div>
+        <div>
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        </div> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /.Modal Git -->
+
+<div class="container">
+  <div class="modal fade" id="gitmodal" tabindex="-1" role="dialog" aria-labelledby="gitmodal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <img src="/static/img/git.png" class="rounded py-2" height="50;" width="50;" alt="...">
+           <div class="container">
+           
+            <h5 class="modal-title text-center"  id="gitmodaltitle">   Module-4: Git and GitHub Version Control System
+            </h5>
+           </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+           
+              <div class="mb-3">
+             
+                    <p class="border-bottom">✓ Git Installation and Configuration on EC2 Instance and Local Machine.</p>
+                    <p class="border-bottom">✓ GitHub Account Activation, Secret Key Generation, and Creating Public/Private Repositories.
+                    </p>
+                    <p class="border-bottom">✓ GitHub Integration with Local Repository.</p>
+                    <p class="border-bottom">✓ Git Operations and Code Push to GitHub or Gitlab
+                      .</p>
+                    <p class="border-bottom">✓ Advanced Git Operations with Source Code
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating an Environment for Developers with 1 Local Repository and 1 Remote Repository.
+                    </p>
+                    <p class="border-bottom">✓ Creating an Environment for Developers with 2 Local Branches/Repositories and 1 Remote
+                      Repository
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating an Environment for Developers with 4 Local Branches/Repositories and 1 Remote
+                      Repository.
+                    </p>
+                    <p class="border-bottom">✓ Pulling/Committing Code from GitHub.
+                    </p>
+                    <p class="border-bottom">✓ Project
+                      .
+                    </p>
+                  
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          </div> 
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- /.Modal Jenkins -->
+
+<div class="container">
+  <div class="modal fade" id="jkmodal" tabindex="-1" role="dialog" aria-labelledby="jkmodal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <img src="/static/img/j.png" class="rounded py-2" height="50;" width="50;" alt="...">
+           <div class="container">
+           
+            <h5 class="modal-title text-center"  id="jkmodaltitle">   Module-5: Jenkins CI/CD Pipeline
+            </h5>
+           </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+           
+              <div class="mb-3">
+             
+                    <p class="border-bottom">✓ Jenkins Installation and Account Configuration.</p>
+                    <p class="border-bottom">✓ Jenkins Plugin and User Management
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Jenkins Features and Services.</p>
+                    <p class="border-bottom">✓ Jenkins Integration with GitHub to Pull Source Code
+
+                      .</p>
+                    <p class="border-bottom">✓ Jenkins Job Creation and Building Jobs with Shell Execution
+
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating a CI/CD Pipeline Using Jenkins.
+                    </p>
+                    <p class="border-bottom">✓ Creating a CI/CD Pipeline for Automated Deployment
+
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating a CI/CD Pipeline for Testing Environments
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating a CI/CD Pipeline for Automated Deployment on AWS
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Automating Deployment Processes with Jenkins
+                      .
+                    </p>
+                  
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /.Modal Docker -->
+
+<div class="container">
+  <div class="modal fade" id="dockermodal" tabindex="-1" role="dialog" aria-labelledby="dockermodal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <img src="/static/img/docker.png" class="rounded py-2" height="50;" width="50;" alt="...">
+           <div class="container">
+           
+            <h5 class="modal-title text-center"  id="dockermodaltitle">   Module-6: Docker containerization
+            </h5>
+           </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+           
+              <div class="mb-3">
+             
+                    <p class="border-bottom">✓ Docker Installation on Amazon Linux EC2
+                      .</p>
+                    <p class="border-bottom">
+                      ✓ Docker Basic Operational Commands
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Docker Hub Account Activation and Image Pull/Search.</p>
+                    <p class="border-bottom">✓ Docker Image Pull and Commit
+
+                      .</p>
+                    <p class="border-bottom">✓ Creating a Dockerfile
+
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Docker Run, Build, and Deploy Containers.
+                    </p>
+                    <p class="border-bottom">✓ Adding Volumes to Containers
+
+
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Docker Port Mapping and Networking
+
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Docker Security
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Running Web Applications with Docker Containers (e.g., Nagios or Jenkins)
+                      .
+                    </p>
+                  
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          </div> 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- /.Modal Kubernetes -->
+
+<div class="container">
+  <div class="modal fade" id="okmodal" tabindex="-1" role="dialog" aria-labelledby="okmodal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <img src="/static/img/kuber.png" class="rounded py-2" height="50;" width="50;" alt="...">
+           <div class="container">
+           
+            <h5 class="modal-title text-center"  id="okmodaltitle">   Module-7: Orchestration (Kubernetes)
+
+            </h5>
+           </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+           
+              <div class="mb-3">
+             
+                    <p class="border-bottom">✓ Kubernetes Cluster Installation and Configuration of Minikube
+                      .</p>
+                    <p class="border-bottom">
+                      ✓ Creating Pods in a Kubernetes Cluster
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating Multi-Container Pods.</p>
+                    <p class="border-bottom">✓ Creating Namespaces in a Kubernetes Cluster .</p>
+                    <p>✓ Creating Pods in a Specific Namespace                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating Multi-Container Pods with Environment Variables.
+                    </p>
+                    <p class="border-bottom">✓ Creating Deployments and Replica Sets.
+                    </p>
+                    <p class="border-bottom">✓ Opening Port 80 in a Pod
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating Replication Controllers  .
+                    </p>
+                    
+                  
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          </div> 
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- /.Modal Ansible -->
+
+<div class="container">
+  <div class="modal fade" id="ansiblemodal" tabindex="-1" role="dialog" aria-labelledby="ansiblemodal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <img src="/static/img/ansible.png" class="rounded py-2" height="50;" width="50;" alt="...">
+           <div class="container">
+           
+            <h5 class="modal-title text-center"  id="ansiblemodaltitle">   Module-8: Ansible Automation Configuration Tool
+
+
+            </h5>
+           </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+           
+              <div class="mb-3">
+             
+                    <p class="border-bottom">✓ Ansible Installation and Configuration
+                      .</p>
+                    <p class="border-bottom">
+                      ✓ Ansible Setup for Master and Nodes
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Creating YAML Scripts for Playbooks.</p>
+                    <p>✓ Creating Ansible Playbooks
+                      .</p>
+                    <p class="border-bottom">✓ Implementing Playbooks and Ansible Automation                      .
+                    </p>
+                    <p class="border-bottom">✓ Using Ansible's Ad-Hoc Commands and Playbooks.
+                    </p>
+                    <p class="border-bottom">✓ Managing Nodes (Servers) in Ansible.
+                    </p>
+                    <p class="border-bottom">✓ Finding and Reusing Ansible Automation Content
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Integrating CI/CD Pipelines for Ansible Automation  .
+                    </p>
+                    <p class="border-bottom">✓ Creating Playbooks for Automated Deployment and Configuration Tasks.</p>
+                    
+                  
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          </div> 
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- /.Modal Terraform -->
+
+<div class="container">
+  <div class="modal fade" id="terramodal" tabindex="-1" role="dialog" aria-labelledby="terramodal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <img src="/static/img/t.png" class="rounded py-2" height="50;" width="50;" alt="...">
+           <div class="container">
+           
+            <h5 class="modal-title text-center"  id="terramodaltitle">   Module-9: Terraform IAC Tool
+            </h5>
+           </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+           
+              <div class="mb-3">
+             
+                    <p class="border-bottom">✓ Terraform Installation and Configuration
+                      .</p>
+                    <p class="border-bottom" >
+                      ✓ Generating a Security Key for AWS Provider
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Establishing Integration with AWS Provider.</p>
+                    <p class="border-bottom">✓ Terraform Commands
+                      .</p>
+                    <p class="border-bottom">✓ Creating an EC2 Instance Using Terraform                     .
+                    </p>
+                    <p class="border-bottom">✓ Creating Resources on the AWS Provider Using Terraform.
+                    </p>
+                    <p class="border-bottom">✓ Using Terraform Templates.
+                    </p>
+                    <p class="border-bottom">✓ Creating Terraform Source Code and Pushing to a Remote Repository
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Using Terraform with Other Cloud Providers .
+                    </p>
+                    <p class="border-bottom">✓ Terraform Projects.</p>
+                    
+                  
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          </div> 
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+
+<!-- /.Modal Grafana -->
+
+<div class="container">
+  <div class="modal fade" id="gmodal" tabindex="-1" role="dialog" aria-labelledby="gmodal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <img src="/static/img/grafana.png" class="rounded py-2" height="50;" width="50;" alt="...">
+           <div class="container">
+           
+            <h5 class="modal-title text-center"  id="gmodaltitle">   Module-10: Grafana Observability and Monitoring
+            </h5>
+           </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          </div>
+          <div class="modal-body">
+           
+              <div class="mb-3">
+             
+                    <p class="border-bottom">✓ Installation and Configuration
+                      .</p>
+                    <p class="border-bottom">
+                      ✓ Monitoring and Observability
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Log Management.</p>
+                    <p class="border-bottom">✓ Grafana Panel
+                      .</p>
+                    <p class="border-bottom">✓ Data Sources and Dashboards                    .
+                    </p>
+                    <p class="border-bottom">✓ Creating and Updating Dashboards and Managing Users.
+                    </p>
+                    <p class="border-bottom">✓ Grafana API.
+                    </p>
+                    <p class="border-bottom">✓ Ansible Administrative Tasks
+                      .
+                    </p>
+                    <p class="border-bottom">✓ Automation and Integration with External Systems .
+                    </p>
+                    <p class="border-bottom">✓ Creating Environments and Automating Tasks.</p>
+                    
+                  
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+{% endblock body %}

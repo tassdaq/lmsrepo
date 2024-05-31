@@ -1,0 +1,100 @@
+{% extends 'student.html' %}
+
+{% block title %}updateprofile{% endblock title %}
+
+
+{% block body %}
+<div class="container mb-3 py-4">
+    <p class="display-4 text-center mb-4 py-1">My Profile</p>
+
+    {% if user.is_authenticated %}
+    <div class="row justify-content-center">
+        <div class="col-6 form-group">
+        <label for="fname">UserName</label>
+        <input class="form-control" type="no" value="{{request.user}}">
+        
+    </div>
+    
+    <div class="col-6 form-group">
+        <label for="name">Email</label>
+        <input type="email" class="form-control" value="{{request.user.email}}" >
+      
+    </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6 form-group ">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" value="{{request.user.first_name}}" >
+        </div>
+    
+       
+        <div class="col-6 form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" value="{{request.user.last_name}}">
+        </div>
+        {% endif %}
+    </div>
+
+
+
+
+    {% if key2 %}
+ <form method="post" action="{% url 'updateprofile' pk=key2.id %}">
+   
+    {% csrf_token %}
+      <div class="form-group ">
+          <label>Education</label>
+          <input type="text" class="form-control" value="{{key2.education}}" name="education" >
+      </div>
+
+      <div class="form-group">
+          <label>City</label>
+          <input type="text" class="form-control" value= "{{key2.city}}" name="city" >
+      </div>
+    
+      <div class = "form-group" >
+          <label>Gender</label>
+          <select name="gender" class="form-control"   >
+             
+    
+              <option value="Male">Male</option>
+              {% if key2.gender == "Female" %}
+              <option value="Female" selected>Female</option>
+              {% else %}
+              <option value="Female">Female</option>
+              {% endif %}
+            </select>
+        </div>
+        
+
+    <div class = "form-group">
+      <label>Course</label>
+          <select name = "course" class="form-control" >
+              <option value="devop">DevOps</option>
+              {% if key2.course == "soon" %}
+              <option value="soon" selected>soon</option>
+              {% else %}
+              <option value="soon">soon</option>
+              {% endif %}
+
+            </select>
+  </div>
+  
+  <div class = "form-group">
+
+    <label for="photo" class="form-label">Upload Photo</label>
+    <input class="form-control" type="file"  id="photo" name="photo">
+  </div>
+      
+      <button class="btn btn-primary my-3" type="submit">Submit</button>
+  </form>
+  {% endif %}
+</div>
+
+
+
+
+
+
+
+{% endblock body %}

@@ -1,0 +1,23 @@
+{% extends 'student.html' %}
+{% block title %}My Profile{% endblock title %}
+
+{% block body %}
+<div class="container">
+    <p class="display-4 text-center mb-4 py-4">My Profile</p>
+
+    
+    <div class="container py-4">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            {{ student_profile_form.as_p }}
+    
+            <button class="btn btn-primary" type="submit">Save</button>
+        </form>
+    </div>
+
+   
+ 
+{% endblock body %}
+
+

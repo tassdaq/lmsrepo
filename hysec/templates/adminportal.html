@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block title %}Admin Portal{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+  {% for Students in tuples %}
+  <h1>{{Students.list}}</h1>
+  {% endfor %}
+</div>
+
+
+
+{% endblock body %}

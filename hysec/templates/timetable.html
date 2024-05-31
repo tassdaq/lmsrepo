@@ -1,0 +1,34 @@
+{% extends "student.html" %}
+{% block title %}Timetable{% endblock title %}
+{% block body %}
+
+
+<p class="display-4 text-center py-4">Lectures Timetable</p>
+
+{% for timetables in t %}
+<table class="table table-hover">
+    
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Username</th>
+        <th scope="col">Day</th>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{timetables.sno}}</td>
+        <td>{{timetables.username}}</td>
+        <td>{{timetables.day}}</td>
+        <td>{{timetables.date}}</td>
+        <td>{{timetables.time}}</td>
+      </tr>
+     
+    </tbody>
+    {% endfor %}
+  </table>
+
+
+{% endblock body %}
